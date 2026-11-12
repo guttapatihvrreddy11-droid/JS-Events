@@ -1,0 +1,331 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2908
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\froman\fcharset0 Times-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE html>\
+<html lang="en" class="scroll-smooth">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>JS Events | Luxury Event Management</title>\
+    <!-- Tailwind CSS CDN -->\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <script>\
+        tailwind.config = \{\
+            theme: \{\
+                extend: \{\
+                    colors: \{\
+                        luxury: \{\
+                            gold: '#D4AF37',\
+                            darkGold: '#AA7C11',\
+                            cream: '#FDFBF7',\
+                            charcoal: '#1A1A1A'\
+                        \}\
+                    \},\
+                    fontFamily: \{\
+                        serif: ['Playfair Display', 'serif'],\
+                        sans: ['Plus Jakarta Sans', 'sans-serif']\
+                    \}\
+                \}\
+            \}\
+        \}\
+    </script>\
+    <!-- Google Fonts -->\
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">\
+    <!-- FontAwesome for Icons -->\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">\
+    <style>\
+        body \{ font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FDFBF7; color: #1A1A1A; \}\
+        h1, h2, h3, h4, .font-serif \{ font-family: 'Playfair Display', serif; \}\
+        .gold-gradient-text \{\
+            background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA7C11 100%);\
+            -webkit-background-clip: text;\
+            -webkit-text-fill-color: transparent;\
+        \}\
+        .gold-border \{ border-color: #D4AF37; \}\
+        .gold-bg \{ background-color: #D4AF37; \}\
+    </style>\
+</head>\
+<body class="bg-luxury-cream text-luxury-charcoal antialiased selection:bg-luxury-gold selection:text-white">\
+\
+    <!-- Header / Navigation -->\
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-luxury-gold/20 shadow-sm">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">\
+            <div class="flex items-center space-x-3">\
+                <div class="w-10 h-10 rounded-full border-2 border-luxury-gold flex items-center justify-center bg-luxury-cream shadow-inner">\
+                    <span class="font-serif font-bold text-luxury-darkGold text-xl">JS</span>\
+                </div>\
+                <div>\
+                    <span class="text-2xl font-serif font-bold tracking-wider text-luxury-charcoal">JS EVENTS</span>\
+                    <span class="block text-[10px] tracking-[0.25em] uppercase text-luxury-darkGold font-semibold">Luxury Celebrations</span>\
+                </div>\
+            </div>\
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">\
+                <a href="#home" class="hover:text-luxury-darkGold transition-colors">Home</a>\
+                <a href="#celebrations" class="hover:text-luxury-darkGold transition-colors">Celebrations</a>\
+                <a href="#services" class="hover:text-luxury-darkGold transition-colors">Services</a>\
+                <a href="#contact" class="hover:text-luxury-darkGold transition-colors">Contact</a>\
+            </nav>\
+            <div>\
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 border border-luxury-gold text-luxury-darkGold hover:bg-luxury-gold hover:text-white transition-all duration-300 text-sm font-semibold tracking-wide uppercase">\
+                    Book Consultation\
+                </a>\
+            </div>\
+        </div>\
+    </header>\
+\
+    <!-- Hero Section with 7th Image -->\
+    <section id="home" class="relative min-h-[90vh] flex items-center justify-center bg-luxury-charcoal overflow-hidden">\
+        <!-- 7th Image as Hero Background -->\
+        <div class="absolute inset-0 z-0">\
+            <img src="IMG_20261112_151641_791.jpg" alt="South Indian Traditional Wedding Mandap" class="w-full h-full object-cover opacity-50 scale-105">\
+            <div class="absolute inset-0 bg-gradient-to-t from-luxury-charcoal via-luxury-charcoal/60 to-transparent"></div>\
+        </div>\
+        \
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center py-24">\
+            <span class="inline-block px-4 py-1.5 rounded-full border border-luxury-gold/50 bg-black/40 text-luxury-gold text-xs uppercase tracking-[0.3em] font-semibold mb-6 backdrop-blur-sm">\
+                Exquisite South Indian Weddings & Events\
+            </span>\
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">\
+                Crafting Timeless <span class="gold-gradient-text">Celebrations</span>\
+            </h1>\
+            <p class="text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto mb-10 font-light leading-relaxed">\
+                From sacred South Indian wedding rituals to grand receptions and divine naming ceremonies, we bring your dream celebrations to life with uncompromising elegance.\
+            </p>\
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">\
+                <a href="#celebrations" class="w-full sm:w-auto px-8 py-4 gold-bg text-white font-semibold tracking-wide uppercase hover:bg-luxury-darkGold transition-all shadow-lg">\
+                    Explore Celebrations\
+                </a>\
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 border-2 border-white text-white font-semibold tracking-wide uppercase hover:bg-white hover:text-luxury-charcoal transition-all">\
+                    View Services\
+                </a>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Choose Your Celebration Section (6 Cards with exact uploaded images) -->\
+    <section id="celebrations" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+        <div class="text-center max-w-3xl mx-auto mb-16">\
+            <span class="text-luxury-darkGold text-xs uppercase tracking-[0.25em] font-bold">Curated Experiences</span>\
+            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-luxury-charcoal mt-2 mb-4">Choose Your Celebration</h2>\
+            <div class="w-24 h-0.5 bg-luxury-gold mx-auto mb-4"></div>\
+            <p class="text-gray-600">Discover our signature event categories, meticulously tailored with traditional grandeur and modern sophistication.</p>\
+        </div>\
+\
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">\
+            <!-- 1. Marriages -->\
+            <div class="group relative rounded-xl overflow-hidden shadow-md bg-white border border-luxury-gold/20 flex flex-col">\
+                <div class="relative aspect-[4/5] overflow-hidden">\
+                    <img src="IMG_20261112_151631_651.jpg" alt="Marriages" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">\
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>\
+                    <div class="absolute bottom-6 left-6 right-6">\
+                        <span class="text-luxury-gold text-xs uppercase tracking-widest font-semibold block mb-1">Sacred Union</span>\
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Marriages</h3>\
+                        <p class="text-gray-200 text-sm font-light">Authentic South Indian wedding mandaps, traditional rituals, and flawless coordination.</p>\
+                    </div>\
+                </div>\
+            </div>\
+\
+            <!-- 2. Birthdays -->\
+            <div class="group relative rounded-xl overflow-hidden shadow-md bg-white border border-luxury-gold/20 flex flex-col">\
+                <div class="relative aspect-[4/5] overflow-hidden">\
+                    <img src="IMG_20261112_151639_732.jpg" alt="Birthdays" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">\
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>\
+                    <div class="absolute bottom-6 left-6 right-6">\
+                        <span class="text-luxury-gold text-xs uppercase tracking-widest font-semibold block mb-1">Joyful Milestones</span>\
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Birthdays</h3>\
+                        <p class="text-gray-200 text-sm font-light">Stunning floral arches, bespoke themes, and unforgettable milestone celebrations.</p>\
+                    </div>\
+                </div>\
+            </div>\
+\
+            <!-- 3. Reception -->\
+            <div class="group relative rounded-xl overflow-hidden shadow-md bg-white border border-luxury-gold/20 flex flex-col">\
+                <div class="relative aspect-[4/5] overflow-hidden">\
+                    <img src="IMG_20261112_151635_498.jpg" alt="Reception" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">\
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>\
+                    <div class="absolute bottom-6 left-6 right-6">\
+                        <span class="text-luxury-gold text-xs uppercase tracking-widest font-semibold block mb-1">Grand Evenings</span>\
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Reception</h3>\
+                        <p class="text-gray-200 text-sm font-light">Opulent stage setups, crystal chandeliers, and red carpet elegance for your guests.</p>\
+                    </div>\
+                </div>\
+            </div>\
+\
+            <!-- 4. Parties -->\
+            <div class="group relative rounded-xl overflow-hidden shadow-md bg-white border border-luxury-gold/20 flex flex-col">\
+                <div class="relative aspect-[4/5] overflow-hidden">\
+                    <img src="IMG_20261112_151629_088.jpg" alt="Parties" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">\
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>\
+                    <div class="absolute bottom-6 left-6 right-6">\
+                        <span class="text-luxury-gold text-xs uppercase tracking-widest font-semibold block mb-1">Vibrant Gatherings</span>\
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Parties</h3>\
+                        <p class="text-gray-200 text-sm font-light">Sangeet nights, festive sangeet celebrations, and lively music-filled gatherings.</p>\
+                    </div>\
+                </div>\
+            </div>\
+\
+            <!-- 5. Functions -->\
+            <div class="group relative rounded-xl overflow-hidden shadow-md bg-white border border-luxury-gold/20 flex flex-col">\
+                <div class="relative aspect-[4/5] overflow-hidden">\
+                    <img src="IMG_20261112_151633_255.jpg" alt="Functions" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">\
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>\
+                    <div class="absolute bottom-6 left-6 right-6">\
+                        <span class="text-luxury-gold text-xs uppercase tracking-widest font-semibold block mb-1">Cultural Traditions</span>\
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Functions</h3>\
+                        <p class="text-gray-200 text-sm font-light">Traditional poojas, housewarmings, and auspicious family ceremonies styled to perfection.</p>\
+                    </div>\
+                </div>\
+            </div>\
+\
+            <!-- 6. Naming Ceremony -->\
+            <div class="group relative rounded-xl overflow-hidden shadow-md bg-white border border-luxury-gold/20 flex flex-col">\
+                <div class="relative aspect-[4/5] overflow-hidden">\
+                    <img src="IMG_20261112_151637_937.jpg" alt="Naming Ceremony" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">\
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>\
+                    <div class="absolute bottom-6 left-6 right-6">\
+                        <span class="text-luxury-gold text-xs uppercase tracking-widest font-semibold block mb-1">Newborn Blessings</span>\
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Naming Ceremony</h3>\
+                        <p class="text-gray-200 text-sm font-light">Cradle decorations, floral themes, and serene styling for your newborn's special day.</p>\
+                    </div>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Event Services Section (Unchanged as requested) -->\
+    <section id="services" class="py-24 bg-white border-t border-luxury-gold/20">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">\
+            <div class="text-center max-w-3xl mx-auto mb-16">\
+                <span class="text-luxury-darkGold text-xs uppercase tracking-[0.25em] font-bold">Comprehensive Capabilities</span>\
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-luxury-charcoal mt-2 mb-4">Event Services</h2>\
+                <div class="w-24 h-0.5 bg-luxury-gold mx-auto mb-4"></div>\
+                <p class="text-gray-600">Everything you need to execute an immaculate, stress-free celebration.</p>\
+            </div>\
+\
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">\
+                <!-- Service 1 -->\
+                <div class="p-8 rounded-xl bg-luxury-cream border border-luxury-gold/10 hover:border-luxury-gold/50 transition-all">\
+                    <div class="w-14 h-14 rounded-lg gold-bg text-white flex items-center justify-center text-2xl mb-6 shadow-md">\
+                        <i class="fa-solid fa-chess-rook"></i>\
+                    </div>\
+                    <h3 class="text-xl font-serif font-bold mb-3 text-luxury-charcoal">Stage & Mandap Decor</h3>\
+                    <p class="text-gray-600 text-sm leading-relaxed">Exquisite floral arrangements, traditional temple architecture, and custom stage backdrops.</p>\
+                </div>\
+\
+                <!-- Service 2 -->\
+                <div class="p-8 rounded-xl bg-luxury-cream border border-luxury-gold/10 hover:border-luxury-gold/50 transition-all">\
+                    <div class="w-14 h-14 rounded-lg gold-bg text-white flex items-center justify-center text-2xl mb-6 shadow-md">\
+                        <i class="fa-solid fa-utensils"></i>\
+                    </div>\
+                    <h3 class="text-xl font-serif font-bold mb-3 text-luxury-charcoal">Catering & Dining</h3>\
+                    <p class="text-gray-600 text-sm leading-relaxed">Authentic South Indian feasts served on banana leaves, live counters, and multi-cuisine menus.</p>\
+                </div>\
+\
+                <!-- Service 3 -->\
+                <div class="p-8 rounded-xl bg-luxury-cream border border-luxury-gold/10 hover:border-luxury-gold/50 transition-all">\
+                    <div class="w-14 h-14 rounded-lg gold-bg text-white flex items-center justify-center text-2xl mb-6 shadow-md">\
+                        <i class="fa-solid fa-camera-retro"></i>\
+                    </div>\
+                    <h3 class="text-xl font-serif font-bold mb-3 text-luxury-charcoal">Photography & Film</h3>\
+                    <p class="text-gray-600 text-sm leading-relaxed">Cinematic wedding films, drone coverage, and candid photography capturing every emotion.</p>\
+                </div>\
+\
+                <!-- Service 4 -->\
+                <div class="p-8 rounded-xl bg-luxury-cream border border-luxury-gold/10 hover:border-luxury-gold/50 transition-all">\
+                    <div class="w-14 h-14 rounded-lg gold-bg text-white flex items-center justify-center text-2xl mb-6 shadow-md">\
+                        <i class="fa-solid fa-music"></i>\
+                    </div>\
+                    <h3 class="text-xl font-serif font-bold mb-3 text-luxury-charcoal">Entertainment & Music</h3>\
+                    <p class="text-gray-600 text-sm leading-relaxed">Traditional Nadaswaram, live bands, DJ setups, and curated sound engineering.</p>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Contact / Booking Section -->\
+    <section id="contact" class="py-24 bg-luxury-charcoal text-white relative overflow-hidden">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">\
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">\
+                <div>\
+                    <span class="text-luxury-gold text-xs uppercase tracking-[0.25em] font-bold">Get In Touch</span>\
+                    <h2 class="text-3xl sm:text-5xl font-serif font-bold mt-2 mb-6">Let's Create Your Dream Event</h2>\
+                    <p class="text-gray-300 mb-8 leading-relaxed font-light">\
+                        Contact our expert planners today to discuss your vision, check date availability, and schedule a personalized consultation.\
+                    </p>\
+                    <div class="space-y-4 text-gray-300">\
+                        <div class="flex items-center space-x-4">\
+                            <div class="w-10 h-10 rounded-full border border-luxury-gold flex items-center justify-center text-luxury-gold">\
+                                <i class="fa-solid fa-phone"></i>\
+                            </div>\
+                            <span>+91 98765 43210</span>\
+                        </div>\
+                        <div class="flex items-center space-x-4">\
+                            <div class="w-10 h-10 rounded-full border border-luxury-gold flex items-center justify-center text-luxury-gold">\
+                                <i class="fa-solid fa-envelope"></i>\
+                            </div>\
+                            <span>contact@jsevents.luxury</span>\
+                        </div>\
+                        <div class="flex items-center space-x-4">\
+                            <div class="w-10 h-10 rounded-full border border-luxury-gold flex items-center justify-center text-luxury-gold">\
+                                <i class="fa-solid fa-location-dot"></i>\
+                            </div>\
+                            <span>Allagadda, Andhra Pradesh, India</span>\
+                        </div>\
+                    </div>\
+                </div>\
+\
+                <div class="bg-white/5 p-8 sm:p-10 rounded-2xl border border-luxury-gold/30 backdrop-blur-md">\
+                    <h3 class="text-2xl font-serif font-bold mb-6 text-white">Book a Consultation</h3>\
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been submitted successfully.');" class="space-y-4">\
+                        <div>\
+                            <label class="block text-xs uppercase tracking-wider text-gray-300 mb-2">Your Name</label>\
+                            <input type="text" required class="w-full bg-white/10 border border-luxury-gold/30 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-luxury-gold">\
+                        </div>\
+                        <div>\
+                            <label class="block text-xs uppercase tracking-wider text-gray-300 mb-2">Phone Number</label>\
+                            <input type="tel" required class="w-full bg-white/10 border border-luxury-gold/30 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-luxury-gold">\
+                        </div>\
+                        <div>\
+                            <label class="block text-xs uppercase tracking-wider text-gray-300 mb-2">Event Type</label>\
+                            <select class="w-full bg-zinc-900 border border-luxury-gold/30 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-luxury-gold">\
+                                <option>Marriage</option>\
+                                <option>Birthday</option>\
+                                <option>Reception</option>\
+                                <option>Party</option>\
+                                <option>Function</option>\
+                                <option>Naming Ceremony</option>\
+                            </select>\
+                        </div>\
+                        <div>\
+                            <label class="block text-xs uppercase tracking-wider text-gray-300 mb-2">Message / Requirements</label>\
+                            <textarea rows="3" class="w-full bg-white/10 border border-luxury-gold/30 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-luxury-gold"></textarea>\
+                        </div>\
+                        <button type="submit" class="w-full py-4 gold-bg text-white font-semibold uppercase tracking-wider hover:bg-luxury-darkGold transition-all shadow-lg">\
+                            Submit Inquiry\
+                        </button>\
+                    </form>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Footer -->\
+    <footer class="bg-black text-gray-400 py-12 border-t border-luxury-gold/20">\
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-sm">\
+            <div class="flex items-center space-x-3 mb-4 sm:mb-0">\
+                <span class="font-serif font-bold text-white text-lg">JS EVENTS</span>\
+            </div>\
+            <p>&copy; 2026 JS Events Management. All rights reserved.</p>\
+        </div>\
+    </footer>\
+\
+</body>\
+</html>
+\f1\b\fs28 \
+}
